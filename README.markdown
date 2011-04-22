@@ -17,12 +17,12 @@ Simple copy `minidb.php` to your project and include.  Eg:
 
 Connect to a database by instantiating a new `MiniDB` object.
 
-    $db = new MiniDB(array(
-      'hostname' => 'localhost',
-      'database' => 'testdb',
-      'username' => 'root',
-      'password' => 'root'
-    ));
+    $hostname = 'localhost';
+    $username = 'root';
+    $password = 'root';
+    $database = 'test';
+
+    $db = new MiniDB($hostname, $username, $password, $database);
 
 Check for connection errors:
 
@@ -56,7 +56,7 @@ Get the number of rows returned in a query:
 
     $query->num_rows();
 
-Get the number of rows affected by a query:
+Get the number of rows affected by a write-type query:
 
     $query->affected_rows();
 
