@@ -9,7 +9,7 @@ results. If you need more than this, MiniDB probably isn't for you.
 
 ## Installation
 
-Simple copy `minidb.php` to your project and include.  Eg:
+Simply copy `minidb.php` to your project and include.  Eg:
 
     cp minidb/minidb.php myapp/includes
 
